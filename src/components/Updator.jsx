@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
-import Checkbox from '@mui/material/Checkbox';
 
 function Updator() {
-
-  
 
     const [team,setTeam] = useState({
         india : false,

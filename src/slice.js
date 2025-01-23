@@ -20,10 +20,10 @@ const scoreSlice = createSlice({
         }
     },
     reducers : {
-        addRuns : (state,action)=>{
+        addRuns : (state)=>{
             state.battingTeam.runsScored += state.runs;
         },
-        addWickets: (state,action)=>{
+        addWickets: (state)=>{
             state.BowlingTeam.wicketsTaken +=1;
         }
     }

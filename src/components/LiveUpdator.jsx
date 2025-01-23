@@ -3,8 +3,9 @@ import { useDispatch, useSelector } from 'react-redux'
 
 function LiveUpdator() {
 
-    // const runs = useSelector((state)=>state.runs);
-    // const dipatch = useDispatch()
+    const runs = useSelector((state)=>state.runs);
+
+    const dipatch = useDispatch()
     
   return (
     <div>
@@ -19,12 +20,12 @@ function LiveUpdator() {
             <input type="text" name="currentBowler" />
            
             <label>Runs</label> <br />
-            <button >0</button> <br />
-            <button>1</button><br />
-            <button>2</button><br />
-            <button>3</button><br />
-            <button>4</button><br />
-            <button>6</button><br />
+            <button onClick={dipatch(runs[0])}>0</button> <br />
+            <button onClick={dipatch(runs[1])}>1</button><br />
+            <button onClick={dipatch(runs[2])}>2</button><br />
+            <button onClick={dipatch(runs[3])}>3</button><br />
+            <button onClick={dipatch(runs[4])}>4</button><br />
+            <button onClick={dipatch(runs[5])}>6</button><br />
             <label>Wicket: </label>
             <button>Out</button>
             <button>Not Out</button> <br /><br />

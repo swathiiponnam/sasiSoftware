@@ -1,8 +1,6 @@
-const { configureStore } = require("@reduxjs/toolkit");
+import { configureStore } from "@reduxjs/toolkit";
 
 const store = configureStore({
-    reducer : {
-        score : "scoreReducer"
-    }
+    reducer : {score : "scoreReducer"}
 })
 export default store;
